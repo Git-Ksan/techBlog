@@ -57,7 +57,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <a
-                                href="https://nerdcave.com/tailwind-cheat-sheet"
+                                href="https://github.com/Git-Ksan"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >
