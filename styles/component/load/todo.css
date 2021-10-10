@@ -1,0 +1,18 @@
+.list-row {
+  display: flex;
+  font-size: 1rem;
+  padding: 1px;
+  color: black;
+  letter-spacing: 3px;
+  font-family: sans-serif;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 60px;
+  margin-inline-end: 60px;
+  align-items: center;
+}
+
+.list-item {
+  min-width: 200px;
+  border-bottom: #dfdfdf solid 2px;
+}

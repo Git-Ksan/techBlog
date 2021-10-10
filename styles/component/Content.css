@@ -1,97 +1,97 @@
 .content-layout {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-areas: "sidebar main";
-    grid-template-columns: 1fr 3fr;
-    margin-top: 10%;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas: "sidebar main";
+  grid-template-columns: 1fr 3fr;
+  margin-top: 10%;
 
-    width: 100%;
-    align-content: center;
-    
-    text-align: left;
-    margin: 0 auto;
-    padding: 0 1em;
-    z-index: 0;
+  width: 100%;
+  align-content: center;
+
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 1em;
+  z-index: 0;
 }
 
 .contents-main {
-    width: 700px;
-    border: solid;
-    border: 1px solid;
-    border-color: #c7c7c7;
-    border-radius: 8px; /* 半径が8pxの角丸 */
+  width: 700px;
+  border: solid;
+  border: 1px solid;
+  border-color: #c7c7c7;
+  border-radius: 8px; /* 半径が8pxの角丸 */
 }
 
 .contents-sub {
-    width: 324px;
-    border: solid;
-    border: 1px solid;
-    border-color: #c7c7c7;
-    border-radius: 8px; /* 半径が8pxの角丸 */
+  width: 324px;
+  border: solid;
+  border: 1px solid;
+  border-color: #c7c7c7;
+  border-radius: 8px; /* 半径が8pxの角丸 */
 }
 
 .contents-h1 {
-    padding: 20px;
-    margin: 40px;
-    font-size: 2.5rem;
-    font-family:sans-serif;
-    letter-spacing: .035rem;
-    line-height: 1.2;
-    font-weight: bold;
+  padding: 20px;
+  margin: 40px;
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  letter-spacing: 0.035rem;
+  line-height: 1.2;
+  font-weight: bold;
 }
 
 .contents-h2 {
-    border-left: 0;
-    font-size: 1.5rem;
-    padding: 20px;
-    margin: 60px;
-    border-top: #dfdfdf solid 2px;
-    border-bottom: #dfdfdf solid 2px;
-    color: black;
-    letter-spacing: 2px;
-    font-weight: 700;
+  border-left: 0;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin: 60px;
+  border-top: #dfdfdf solid 2px;
+  border-bottom: #dfdfdf solid 2px;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .contents-p {
-    display: block;
-    font-size: 1.0rem;
-    padding: 5px;
-    color: black;
-    letter-spacing: 2px;
-    font-family:sans-serif;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 60px;
-    margin-inline-end: 60px;
+  display: block;
+  font-size: 1rem;
+  padding: 5px;
+  color: black;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 60px;
+  margin-inline-end: 60px;
 }
 
 .contents-input1 {
-    border: 2px solid rgb(148, 148, 146);  /* 枠線 */
-    border-radius: 0.67em;   /* 角丸 */
-    font-size: 1.0rem;
-    padding: 5px;
-    color: black;
-    letter-spacing: 2px;
-    font-family:sans-serif;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 60px;
-    margin-inline-end: 60px;   
-    width: 70%;             /* 横幅いっぱいにする */
+  border: 2px solid rgb(148, 148, 146); /* 枠線 */
+  border-radius: 0.67em; /* 角丸 */
+  font-size: 1rem;
+  padding: 5px;
+  color: black;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 60px;
+  margin-inline-end: 30px;
+  width: 70%; /* 横幅いっぱいにする */
 }
 
 .contents-input2 {
-    border: 2px solid rgb(148, 148, 146);  /* 枠線 */
-    border-radius: 0.67em;   /* 角丸 */
-    font-size: 1.0rem;
-    padding: 5px;
-    color: black;
-    letter-spacing: 2px;
-    font-family:sans-serif;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 60px;
-    margin-inline-end: 60px;   
-    width: 70%;             /* 横幅いっぱいにする */
-    height: 200px;    
+  border: 2px solid rgb(148, 148, 146); /* 枠線 */
+  border-radius: 0.67em; /* 角丸 */
+  font-size: 1rem;
+  padding: 5px;
+  color: black;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 60px;
+  margin-inline-end: 30px;
+  width: 70%; /* 横幅いっぱいにする */
+  height: 200px;
 }

@@ -18,12 +18,12 @@ export default function MainHeader() {
                     Blog
                   </a>
                 </Link>
-                <Link href="/React/home">
+                <Link href="/react/home">
                   <a className="text-black hover:opacity-75 px-3 py-2 rounded">
                     React
                   </a>
                 </Link>
-                <Link href="/Python/home">
+                <Link href="/python/home">
                   <a className="text-black hover:opacity-75 px-3 py-2 rounded">
                     Python
                   </a>
@@ -31,6 +31,11 @@ export default function MainHeader() {
                 <Link href="/contact">
                   <a className="text-black hover:opacity-75 px-3 py-2 rounded">
                     Contact
+                  </a>
+                </Link>
+                <Link href="/load/home">
+                  <a className="text-black hover:opacity-75 px-3 py-2 rounded">
+                    Load
                   </a>
                 </Link>
               </div>

@@ -6,6 +6,7 @@ export default function ContactForm() {
     const [isSubmitted, setIsSubmitted] = useState(false)
 
     let contactForm = null;    //レンダリングするhtml情報
+
     if (isSubmitted) 
     {
       contactForm = (
