@@ -1,23 +1,23 @@
 import React from "react";
 import Layout from "../components/Layout";
-import MainContent from "../components/contents/MainContent";
-import SubContent from "../components/contents/SubContent";
-import Header from "../components/MainHeader";
-import Content from "../components/contents/ContentLayout"
-import Footer from "../components/MainFooter";
+import Content from "../components/templates/contents/ContentLayout"
 import Image from "next/image";
 import ContactForm from "../components/contents/ContactForm";
+
+import { HeaderOnly } from "../components/templates/HeaderLayOut";
+import { ContentsMainArea } from "../components/templates/contents/ContentsMainArea";
+import { ContentsSubArea } from "../components/templates/contents/ContentsSubArea";
 
 export default function Contact() {
   return (
     <React.Fragment>
       <Layout title="Contact">
-        <Header></Header>
+        <HeaderOnly/>
         <Content>
-            <MainContent>
+            <ContentsMainArea>
                 <ContactForm></ContactForm>
-            </MainContent>
-            <SubContent>
+            </ContentsMainArea>
+            <ContentsSubArea>
                 <div className="bg-white text-center p-8 w-80 rounded">
                     <div className="mt-4">
                         <p className="font-bold">Contant info</p>
@@ -73,9 +73,8 @@ export default function Contact() {
                             </div>
                     </div>
                 </div>
-            </SubContent>
+            </ContentsSubArea>
         </Content>
-        <Footer></Footer>
       </Layout>
     </React.Fragment>
   );

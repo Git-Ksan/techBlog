@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
-export default function MainFooter() {
+export default function FooterLayOut() {
+    //そんな重要じゃないからメンテはあと
     return(
         <div className="justify-center">
             <footer className="w-full h-12 flex justify-center items-center border-t">

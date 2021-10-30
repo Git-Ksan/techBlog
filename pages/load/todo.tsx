@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Layout from "../../components/Layout";
-import MainContent from "../../components/contents/MainContent";
-import SubContent from "../../components/contents/SubContent";
-import Header from "../../components/MainHeader";
-import Content from "../../components/contents/ContentLayout"
-import Footer from "../../components/MainFooter";
+import Content from "../../components/templates/contents/ContentLayout"
 import TodoInput from "../../components/contents/todo/TodoInput";
+
+import { HeaderOnly } from "../../components/templates/HeaderLayOut";
+import { ContentsMainArea } from "../../components/templates/contents/ContentsMainArea";
+import { ContentsSubArea } from "../../components/templates/contents/ContentsSubArea";
 
 export default function TodoApp() {
 
@@ -91,9 +91,9 @@ export default function TodoApp() {
     return (
     <>
       <Layout title="Todo">
-        <Header></Header>
+      <HeaderOnly/>
         <Content>
-          <MainContent>
+          <ContentsMainArea>
             <h1 className="contents-h1">Todoアプリ</h1>
             
             <TodoInput todoText={todoText} onChange={onChangeTodoText} onClick={onClickAddTodo} />
@@ -129,8 +129,8 @@ export default function TodoApp() {
                     }
                 </ul>
             </div>
-          </MainContent>
-          <SubContent>
+          </ContentsMainArea>
+          <ContentsSubArea>
             <h2 className="contents-h2">履歴</h2>
             <ul>
                 {histroy.map((todo) =>{
@@ -142,9 +142,8 @@ export default function TodoApp() {
                     })
                 }
             </ul>
-          </SubContent>
+          </ContentsSubArea>
         </Content>
-        <Footer></Footer>
       </Layout>
     </>
   )

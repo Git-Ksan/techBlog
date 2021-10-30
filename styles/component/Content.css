@@ -63,6 +63,7 @@
   margin-block-end: 1em;
   margin-inline-start: 60px;
   margin-inline-end: 60px;
+  overflow-wrap: break-word;
 }
 
 .contents-input1 {
@@ -78,6 +79,7 @@
   margin-inline-start: 60px;
   margin-inline-end: 30px;
   width: 70%; /* 横幅いっぱいにする */
+  overflow-wrap: break-word;
 }
 
 .contents-input2 {
@@ -94,4 +96,5 @@
   margin-inline-end: 30px;
   width: 70%; /* 横幅いっぱいにする */
   height: 200px;
+  overflow-wrap: break-word;
 }
