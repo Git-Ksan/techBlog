@@ -10,10 +10,10 @@ export const HeaderItem = memo(() => {
     //ヘッダーに表示するリスト 増やしたい時はここいじる
     let dispList : Array<Link> = [
         {name: "Home", url:"/", LStyle: HeaderLStyle},
-        {name: "パソコン", url:"/pc/home",  LStyle: HeaderLStyle},
-        {name: "エンジニア", url:"/enginner/home",  LStyle: HeaderLStyle},
+        {name: "パソコン", url:"/",  LStyle: HeaderLStyle},
+        {name: "エンジニア", url:"/",  LStyle: HeaderLStyle},
         {name: "試作一覧", url:"/load/home",  LStyle: HeaderLStyle},
-        {name: "コンタクト", url:"/contact",  LStyle: HeaderLStyle},
+        {name: "コンタクト", url:"/",  LStyle: HeaderLStyle},
     ];
 
     return (

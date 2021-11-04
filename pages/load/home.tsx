@@ -19,8 +19,8 @@ export default function LoadHome() {
           <ContentsMainArea>
             <H1>今まで作ってきたものの</H1>
             <H2>試作品機能群</H2>
-              <BaseLink name="Todoアプリ" url="./todo" LStyle = {ContentLStyle} key="0"/><br></br>
-              <BaseLink name="会員登録系" url="./regist/home" LStyle = {ContentLStyle} key="0"/>
+              <BaseLink name="Todoアプリ" url="./todo" LStyle = {ContentLStyle} key="100"/><br></br>
+              <BaseLink name="会員登録系" url="./regist/home" LStyle = {ContentLStyle} key="101"/>
               <P>test</P>
           </ContentsMainArea>
           <ContentsSubArea>
