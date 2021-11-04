@@ -4,7 +4,8 @@ import styled, { StyledComponent } from "styled-components";
 /** コンテンツの本文 */
 export const P = memo(({children}) => {
     return (
-        <P1Style>{children}</P1Style>
+        // eslint-disable-next-line react/display-name
+        <P1Style key={"P1"}>{children}</P1Style>
     );
 })
 

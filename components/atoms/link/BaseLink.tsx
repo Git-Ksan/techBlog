@@ -12,9 +12,10 @@ export const BaseLink = memo((props: Link) => {
     const { name, url = "", LStyle = BaseStyle} = props;
 
     return (
+        // eslint-disable-next-line react/display-name
         <>
-            <Link href={url}>
-               <LStyle>{name}</LStyle>
+            <Link href={url}  key={"BaseLink"}>
+               <LStyle  key={"LinkName"}>{name}</LStyle>
             </Link>
         </>
     );

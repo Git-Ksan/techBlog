@@ -17,6 +17,7 @@ export const Login = memo(() => {
     const onClickLogin = () => login(usrId);
 
     return (
+        // eslint-disable-next-line react/display-name
         <>
             <HDiv>
                 <P>ログイン画面</P>

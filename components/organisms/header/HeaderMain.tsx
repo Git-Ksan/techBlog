@@ -5,6 +5,7 @@ import { HeaderItem } from "../../molecule/header/HeaderItem";
 
 export const HeaderMain = memo(() => {
     return (
+        // eslint-disable-next-line react/display-name
         <HStyle>
             <HNav>
                 <HeaderItem/>

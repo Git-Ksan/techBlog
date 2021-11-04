@@ -4,7 +4,8 @@ import styled, { StyledComponent } from "styled-components";
 /** 大見出し用 記事タイトル*/
 export const H1 = memo(({children}) => {
     return (
-        <H1Style>{children}</H1Style>
+        // eslint-disable-next-line react/display-name
+        <H1Style key={"H1"}>{children}</H1Style>
     );
 })
 

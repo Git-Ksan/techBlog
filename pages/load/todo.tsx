@@ -90,13 +90,13 @@ export default function TodoApp() {
     
     return (
     <>
-      <Layout title="Todo">
-      <HeaderOnly/>
-        <Content>
-          <ContentsMainArea>
+      <Layout title="Todo" key={1}>
+      <HeaderOnly key={2}/>
+        <Content  key={3}>
+          <ContentsMainArea key={4}>
             <h1 className="contents-h1">Todoアプリ</h1>
             
-            <TodoInput todoText={todoText} onChange={onChangeTodoText} onClick={onClickAddTodo} key={11}/>
+            <TodoInput todoText={todoText} onChange={onChangeTodoText} onClick={onClickAddTodo} key={5}/>
 
             <div className="incomplete-area">
                 <h2 className="contents-h2">未完了のTODO</h2>
@@ -130,7 +130,7 @@ export default function TodoApp() {
                 </ul>
             </div>
           </ContentsMainArea>
-          <ContentsSubArea>
+          <ContentsSubArea  key={5}>
             <h2 className="contents-h2">履歴</h2>
             <ul>
                 {histroy.map((todo) =>{
