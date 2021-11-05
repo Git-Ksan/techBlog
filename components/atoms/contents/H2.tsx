@@ -3,8 +3,8 @@ import styled, { StyledComponent } from "styled-components";
 
 /** 中見出し用 段落タイトル*/
 export const H2 = memo(({children}) => {
+    // eslint-disable-next-line react/display-name
     return (
-        // eslint-disable-next-line react/display-name
         <H2Style key={"H2"}>{children}</H2Style>
     );
 })

@@ -3,8 +3,8 @@ import styled, { StyledComponent } from "styled-components";
 
 /** コンテンツの本文 */
 export const AllUser = memo(() => {
+    // eslint-disable-next-line react/display-name
     return (
-        // eslint-disable-next-line react/display-name
         <>
         </>
     );

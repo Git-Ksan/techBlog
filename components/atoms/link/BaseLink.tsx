@@ -11,8 +11,8 @@ export type Link = {
 export const BaseLink = memo((props: Link) => {
     const { name, url = "", LStyle = BaseStyle} = props;
 
+    // eslint-disable-next-line react/display-name
     return (
-        // eslint-disable-next-line react/display-name
         <>
             <Link href={url}  key={"BaseLink"}>
                <LStyle  key={"LinkName"}>{name}</LStyle>

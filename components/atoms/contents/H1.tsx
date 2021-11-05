@@ -3,8 +3,8 @@ import styled, { StyledComponent } from "styled-components";
 
 /** 大見出し用 記事タイトル*/
 export const H1 = memo(({children}) => {
+    // eslint-disable-next-line react/display-name
     return (
-        // eslint-disable-next-line react/display-name
         <H1Style key={"H1"}>{children}</H1Style>
     );
 })

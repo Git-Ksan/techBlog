@@ -15,7 +15,7 @@ export const HeaderItem = memo(() => {
         {name: "試作一覧", url:"/load/home",  LStyle: HeaderLStyle},
         {name: "コンタクト", url:"/",  LStyle: HeaderLStyle},
     ];
-
+    // eslint-disable-next-line react/display-name
     return (
         <HDiv>
             <Image src="/React-icon.png" alt="React Logo" width={60} height={40} />
