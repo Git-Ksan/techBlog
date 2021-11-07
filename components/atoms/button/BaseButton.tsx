@@ -7,9 +7,9 @@ export type ButtonDetail = {
     children: React.ReactNode;
 }
 
-export const BaseButton = memo((props: ButtonDetail) => {
+export const BaseButton = memo(function basebutton(props: ButtonDetail) {
     const { onClick, BStyle = BaseStyle, children } = props;
-    // eslint-disable-next-line react/display-name
+
     return <BStyle onClick={onClick} key={"BaseButton"}>{children}</BStyle>; 
 })
 

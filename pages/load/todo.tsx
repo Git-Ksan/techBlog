@@ -119,7 +119,7 @@ export default function TodoApp() {
                 <ul>
                     {completeTodos.map((todo, index) =>{
                         return (
-                            <div className="list-row">
+                            <div key={todo+1} className="list-row">
                                 <li className="list-item">{todo}</li>
                                 <button onClick={() => onClickBackTodo(index)} className="shadow bg-purple-500 hover:bg-purple-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded mx-2">戻す</button>
                                 <button onClick={() => onClickDeleteCompTodo(index)} className="shadow bg-purple-500 hover:bg-purple-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded mx-2">削除</button>

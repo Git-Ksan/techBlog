@@ -7,7 +7,7 @@ import { P } from "../../../atoms/contents/P";
 import { useAuth } from "../../../../hooks/useAuth";
 
 /** コンテンツの本文 */
-export const Login = memo(() => {
+export const Login = memo(function login(){
 
     const [usrId, setUsrId] = useState<string>('');
     const { login , loading} = useAuth();
@@ -17,7 +17,6 @@ export const Login = memo(() => {
     const onClickLogin = () => login(usrId);
 
     return (
-        // eslint-disable-next-line react/display-name
         <>
             <HDiv>
                 <P>ログイン画面</P>

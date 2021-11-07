@@ -1,13 +1,10 @@
+import { memo } from "react";
 import { HeaderMain } from "../organisms/header/HeaderMain";
 
-export const HeaderOnly = (props) => {
-    const { children } = props;
-
-    // eslint-disable-next-line react/display-name
+export const HeaderOnly = memo(function headeronly(){
     return (
         <>
             <HeaderMain></HeaderMain>
-            {children}
         </>
     )
-}
+})

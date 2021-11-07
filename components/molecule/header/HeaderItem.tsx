@@ -5,7 +5,7 @@ import { HeaderLStyle } from "../../atoms/link/HeaderLink";
 import Image from 'next/image'
 
 
-export const HeaderItem = memo(() => {
+export const HeaderItem = memo(function headeritem(){
 
     //ヘッダーに表示するリスト 増やしたい時はここいじる
     let dispList : Array<Link> = [
@@ -15,7 +15,6 @@ export const HeaderItem = memo(() => {
         {name: "試作一覧", url:"/load/home",  LStyle: HeaderLStyle},
         {name: "コンタクト", url:"/",  LStyle: HeaderLStyle},
     ];
-    // eslint-disable-next-line react/display-name
     return (
         <HDiv>
             <Image src="/React-icon.png" alt="React Logo" width={60} height={40} />

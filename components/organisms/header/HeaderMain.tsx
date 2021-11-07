@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { HeaderItem } from "../../molecule/header/HeaderItem";
 
 
-export const HeaderMain = memo(() => {
-    // eslint-disable-next-line react/display-name
+export const HeaderMain = memo(function headermain() {
+    
     return (
         <HStyle>
             <HNav>

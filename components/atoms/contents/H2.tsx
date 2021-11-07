@@ -2,7 +2,7 @@ import { memo } from "react";
 import styled, { StyledComponent } from "styled-components";
 
 /** 中見出し用 段落タイトル*/
-export const H2 = memo(({children}) => {
+export const H2 = memo(function h2({children}){
     // eslint-disable-next-line react/display-name
     return (
         <H2Style key={"H2"}>{children}</H2Style>

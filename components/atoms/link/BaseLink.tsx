@@ -8,13 +8,12 @@ export type Link = {
     LStyle?: StyledComponent<"a", any, {}, never>;
 }
 
-export const BaseLink = memo((props: Link) => {
+export const BaseLink = memo(function baselink(props: Link){
     const { name, url = "", LStyle = BaseStyle} = props;
 
-    // eslint-disable-next-line react/display-name
     return (
         <>
-            <Link href={url}  key={"BaseLink"}>
+            <Link href={url}  key={"BaseLink"} passHref>
                <LStyle  key={"LinkName"}>{name}</LStyle>
             </Link>
         </>

@@ -23,7 +23,6 @@ export const RegistApp = memo((props : ContentID) => {
     //データ登録(ここらへんいい仕組みが思いつけば変えたい)
     let ContentsList : Array<ContentData> = [
         {Id: 0, Data: Login},
-        {Id: 1, Data: AllUser},
     ];
 
     let CntData = ContentsList[ID].Data;
