@@ -7,7 +7,7 @@ import { P } from "../../../atoms/contents/P";
 import { useAuth } from "../../../../hooks/useAuth";
 
 /** コンテンツの本文 */
-export const Login = memo(function login(){
+export const Login = memo(function loginMain(){
 
     const [usrId, setUsrId] = useState<string>('');
     const { login , loading} = useAuth();
