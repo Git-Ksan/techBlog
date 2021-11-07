@@ -11,7 +11,7 @@ export type ContentID = {
  * 練習用
  * ユーザー管理アプリを開いた時のコンテンツに表示物をControllするController
  */
-export const RegistApp = memo((props : ContentID) => {
+export const RegistApp = memo(function registapp(props : ContentID){
     /** 取得したIDで表示するものを変える*/
     const { ID =  0 } = props;
 
