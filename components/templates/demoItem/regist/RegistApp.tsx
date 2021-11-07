@@ -1,4 +1,4 @@
-import { memo, MemoExoticComponent } from "react";
+import { memo, NamedExoticComponent } from "react";
 import { Login } from "../../../organisms/demoItem/regist/Login";
 import { AllUser } from "../../../organisms/demoItem/regist/AllUser";
 
@@ -9,7 +9,7 @@ export type ContentID = {
 
 type ContentData = {
     Id: number;
-    Data: MemoExoticComponent<() => JSX.Element>;
+    Data: NamedExoticComponent<object>;    
 }
 
 /**
@@ -23,6 +23,7 @@ export const RegistApp = memo((props : ContentID) => {
     //データ登録(ここらへんいい仕組みが思いつけば変えたい)
     let ContentsList : Array<ContentData> = [
         {Id: 0, Data: Login},
+        {Id: 1, Data: AllUser},        
     ];
 
     let CntData = ContentsList[ID].Data;
