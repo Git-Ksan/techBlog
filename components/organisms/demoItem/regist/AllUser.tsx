@@ -1,13 +1,12 @@
-import { memo } from "react";
 import styled, { StyledComponent } from "styled-components";
 
 /** コンテンツの本文 */
-export const AllUser = memo(function alluser(){
+export default function AllUser(){
     return (
         <>
         </>
     );
-})
+}
 
 
 /** スタイル定義*/

@@ -1,4 +1,4 @@
-import { ChangeEvent, memo, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import styled from "styled-components";
 import { Input } from "../../../atoms/input/Input";
 import { BaseButton } from "../../../atoms/button/BaseButton";
@@ -7,7 +7,7 @@ import { P } from "../../../atoms/contents/P";
 import { useAuth } from "../../../../hooks/useAuth";
 
 /** コンテンツの本文 */
-export const Login = memo(function loginMain(){
+export default function Login(){
 
     const [usrId, setUsrId] = useState<string>('');
     const { login , loading} = useAuth();
@@ -25,7 +25,7 @@ export const Login = memo(function loginMain(){
             </HDiv>
         </>
     );
-})
+}
 
 const HDiv = styled.div`
 
